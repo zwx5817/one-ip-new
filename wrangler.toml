@@ -4,11 +4,11 @@ compatibility_date = "2026-09-09"
 compatibility_flags = ["nodejs_compat"]
 
 [vars]
-TIANDITU_TOKEN = "bed2c92db1541f2af8b80a1fcccbeb13"
-TURNSTILE_SITE_KEY = "0x4AAAAAAAFjLuzCgIGYzh34U"
-TURNSTILE_HOSTNAMES = "ip-test.tesseract.kdns.fr"
-RECAPTCHA_SITE_KEY = "6LfMC_4tAAAAAPIAZIoXAQ13baZgmfTzeTxObk2M"
 RECAPTCHA_HOSTNAMES = "ip-test.tesseract.kdns.fr"
+RECAPTCHA_SITE_KEY = "6LfMC_4tAAAAAPIAZIoXAQ13baZgmfTzeTxObk2M"
+TIANDITU_TOKEN = "bed2c92db1541f2af8b80a1fcccbeb13"
+TURNSTILE_HOSTNAMES = "ip-test.tesseract.kdns.fr"
+TURNSTILE_SITE_KEY = "0x4AAAAAAFjLuzCgIGYZh34U"
 
 [assets]
 directory = "./dist"
