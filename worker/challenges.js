@@ -14,7 +14,7 @@ const providers = {
   recaptcha: {
     prefix: "RECAPTCHA",
     name: "Google reCAPTCHA v3",
-    url: "https://www.recaptcha.net/recaptcha/api/siteverify",
+    url: "https://www.google.com/recaptcha/api/siteverify",
   },
 };
 function settings(env, id) {
