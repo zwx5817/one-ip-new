@@ -85,7 +85,7 @@ export function collectDeepDiagnostics(
       `/browser-diagnostics.js?v=${version.bundleHash}`,
       location.origin,
     ).href;
-    frame.srcdoc = `<!doctype html><html><head><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-eval'; style-src 'unsafe-inline'; img-src data: blob:; font-src 'none'; connect-src 'none'; frame-src 'self' about:; worker-src 'none'"></head><body><script src="${source}"></script></body></html>`;
+    frame.srcdoc = `<!doctype html><html><head><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-eval' https:; style-src 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' data: https:; frame-src 'self' about: data: https:; worker-src 'none'"></head><body><script src="${source}"></script></body></html>`;
     document.body.append(frame);
   });
 }
